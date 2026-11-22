@@ -6,13 +6,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.13.1](https://github.com/edwardlthompson/open-fences/compare/v1.13.0...v1.13.1) (2026-11-22)
-
-
-### Fixed
-
-* **ci:** sync manifest and README template badge to 1.13.1 ([#6](https://github.com/edwardlthompson/open-fences/issues/6)) ([2ff2243](https://github.com/edwardlthompson/open-fences/commit/2ff2243e8020dc2f80d603d537e5801e4b29ea75))
-
 ## [Unreleased]
 
 ### Added
@@ -30,6 +23,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * **memory:** children keep living memory only under `.agent/` (root `AGENT_MEMORY.md` / `DECISION_LOG.md` removed on init; `check-profile` rejects root stubs)
 * **linguist:** child attrs also vendor `tests/**` and `templates/**`; attribution gate requires patterns (dominant-language residual is advisory)
 * **init:** PowerShell `init-project.ps1` pipes Python here-strings to stdin and uses `PathSeparator` for `PYTHONPATH` (linguist/agent-mode were no-ops or `ModuleNotFoundError` on Linux pwsh)
+
+## [1.13.1](https://github.com/edwardlthompson/open-fences/compare/v1.13.0...v1.13.1) (2026-11-22)
+
+
+### Fixed
+
+* **ci:** sync manifest and README template badge to 1.13.1 ([#6](https://github.com/edwardlthompson/open-fences/issues/6)) ([2ff2243](https://github.com/edwardlthompson/open-fences/commit/2ff2243e8020dc2f80d603d537e5801e4b29ea75))
 
 ## [1.13.0](https://github.com/edwardlthompson/agent-project-bootstrap/compare/v1.12.1...v1.13.0) (2026-11-09)
 
