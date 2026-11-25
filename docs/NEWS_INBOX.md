@@ -97,3 +97,13 @@ Catch-up for Nov 17–18 (the daily brief did not run those mornings).
 
 - [ ] Target WCAG 2.2 AA / EN 301 549 v4 in this repo's UX review checklist (target size minimum, focus not obscured, dragging alternatives, accessible authentication, redundant entry), or pull the APB checklist update once it lands — the repo is still early, so building to the current standard now is cheaper than retrofitting. Label: `[AGENT][LOCAL]` · Priority: P3 · https://www.etsi.org/newsroom/press-releases/etsi-advances-digital-accessibility-across-europe-with-two-standards/
 - [ ] Add a Fences 7 parity and differentiator list to the product brief/roadmap when the repo is initialized (privacy masking, Mica themes, portal search, multi-group moves, DPI-change spacing) — the FOSS replacement should target the current paid baseline from day one. Label: `[AGENT][LOCAL]` · Priority: P3 · https://www.stardock.com/products/fences/history
+
+## 2026-11-25
+
+**News and updates**
+
+- Better Stack compared the same desktop chat app built in GPUI (the Rust, GPU-drawn UI framework Discord is moving its desktop app to), Tauri, and Electron, looking at memory, app size, frame rate and CPU. Useful background if this repo is choosing or revisiting a desktop shell; I did not run their comparison. [GPUI](https://gpui.rs) · [Better Stack](https://www.youtube.com/shorts/PbNB0MHO0eA)
+
+**Tasks for the planning agent**
+
+- - [ ] Add GPUI (and the Better Stack GPUI vs Tauri vs Electron comparison) to the stack-choice notes for this still-uninitialized desktop organizer — the GitHub topics suggest Rust + Windows, and a GPU-drawn native shell is one option alongside Tauri. Label: `[AGENT][LOCAL]` · Priority: P3 · https://gpui.rs
