@@ -107,3 +107,9 @@ Catch-up for Nov 17–18 (the daily brief did not run those mornings).
 **Tasks for the planning agent**
 
 - - [ ] Add GPUI (and the Better Stack GPUI vs Tauri vs Electron comparison) to the stack-choice notes for this still-uninitialized desktop organizer — the GitHub topics suggest Rust + Windows, and a GPU-drawn native shell is one option alongside Tauri. Label: `[AGENT][LOCAL]` · Priority: P3 · https://gpui.rs
+
+## 2026-11-26
+
+**News and updates**
+
+- Conductor moved its agent-workspace desktop app from Tauri to Electron (0.95.0, Nov 16; numbers posted Nov 24), keeping its Rust local server: workspaces open 71% faster, startup-to-render is 4.6x faster and RAM is 35% lower, while the download grew from about 200 MB to about 500 MB. A real-world counterpoint to "Tauri is always lighter": measure cold start and RAM on the real WebView (WebKitGTK on Linux, WebView2 on Windows) rather than assume. [Conductor 0.95.0](https://www.conductor.build/changelog/0.95.0-agents-that-manage-your-local-workspaces) · [X post](https://x.com/charlieholtz/status/2125351294965805147) The existing 11-25 P3 stack-comparison task covers this; news only.
