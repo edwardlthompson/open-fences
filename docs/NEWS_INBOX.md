@@ -113,3 +113,13 @@ Catch-up for Nov 17–18 (the daily brief did not run those mornings).
 **News and updates**
 
 - Conductor moved its agent-workspace desktop app from Tauri to Electron (0.95.0, Nov 16; numbers posted Nov 24), keeping its Rust local server: workspaces open 71% faster, startup-to-render is 4.6x faster and RAM is 35% lower, while the download grew from about 200 MB to about 500 MB. A real-world counterpoint to "Tauri is always lighter": measure cold start and RAM on the real WebView (WebKitGTK on Linux, WebView2 on Windows) rather than assume. [Conductor 0.95.0](https://www.conductor.build/changelog/0.95.0-agents-that-manage-your-local-workspaces) · [X post](https://x.com/charlieholtz/status/2125351294965805147) The existing 11-25 P3 stack-comparison task covers this; news only.
+
+## 2026-11-27
+
+**News and updates**
+
+- MCP reference servers [v2.6.0](https://github.com/modelcontextprotocol/servers/releases/tag/v2.6.0) (Nov 27) fixes six more `mcp-server-git` holes (Git LFS running programs from a repo's `.git/config` GHSA-6663-fm5v-gqm5, `git_remote` credential leak GHSA-wvv2-676g-r57j, `repo_path` env-var expansion GHSA-f33v-89w7-f9vc, `git_merge` overwriting an ignored `.env`), a `server-memory` symlink bug (GHSA-48j5-hj63-c82c), the rest of the `mcp-server-fetch` robots.txt fix, and a Windows junction race in `server-filesystem`. Fixed versions: git and fetch 2026.11.27, memory 2.2.2, filesystem 2.4.1; date-versioned installs won't upgrade on their own. MCP Inspector [2.17.0](https://github.com/modelcontextprotocol/inspector/releases/tag/2.17.0) / [1.0.7](https://github.com/modelcontextprotocol/inspector/releases/tag/1.0.7) block NAT64 / IPv4-in-IPv6 addresses that reached cloud metadata (GHSA-v2gx-m79c-pvxj). open-fences' inherited 11-18 rows still name v2.5.0 / Inspector 2.16.0.
+
+**Tasks for the planning agent**
+
+- [ ] Retarget the open 11-18 MCP rows to servers v2.6.0 and Inspector 2.17.0 / 1.0.7 — Those rows still name v2.5.0 / 2.16.0. Label: `[AGENT][LOCAL]` · Priority: P3 · https://github.com/modelcontextprotocol/servers/releases/tag/v2.6.0
